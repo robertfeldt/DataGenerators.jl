@@ -1,5 +1,5 @@
-julia 0.5
-DataGeneratorTranslators # Pkg.clone(https://github.com/simonpoulding/DataGeneratorTranslators.jl)
+julia 0.6
+DataGeneratorTranslators # Pkg.clone("https://github.com/robertfeldt/DataGeneratorTranslators.jl")
 Distributions 0.12.1
 HypothesisTests 0.4.0
-BaseTestMulti # for runtests; Pkg.clone(https://github.com/simonpoulding/BaseTestMulti.jl)
+BaseTestMulti # for runtests; Pkg.clone("https://github.com/simonpoulding/BaseTestMulti.jl")

@@ -1,14 +1,16 @@
 # DataGenerators
 
-[![Build Status](https://travis-ci.org/simonpoulding/DataGenerators.jl.svg?branch=master)](https://travis-ci.org/simonpoulding/DataGenerator.jl)
+<> [![Build Status](https://travis-ci.org/simonpoulding/DataGenerators.jl.svg?branch=master)](https://travis-ci.org/simonpoulding/DataGenerator.jl)
 
-[![Coverage Status](https://coveralls.io/repos/simonpoulding/DataGenerators.jl/badge.svg?branch=master&service=github)](https://coveralls.io/github/simonpoulding/DataGenerators.jl?branch=master)
+<> [![Coverage Status](https://coveralls.io/repos/simonpoulding/DataGenerators.jl/badge.svg?branch=master&service=github)](https://coveralls.io/github/simonpoulding/DataGenerators.jl?branch=master)
 
-[![codecov.io](http://codecov.io/github/simonpoulding/DataGenerators.jl/coverage.svg?branch=master)](http://codecov.io/github/simonpoulding/DataGenerators.jl?branch=master)
+<> [![codecov.io](http://codecov.io/github/simonpoulding/DataGenerators.jl/coverage.svg?branch=master)](http://codecov.io/github/simonpoulding/DataGenerators.jl?branch=master)
 
 DataGenerators is a data generation package. It enables the generators for structured data to be defined in a natural manner as Julia functions.  It can apply search and optimisation techniques to find data that, for example, can improve software testing by generating more effective test data.
 
-You can write your own data generators utilizing the full power of Julia, or use the [DataGeneratorTranslators](https://github.com/simonpoulding/DataGeneratorTranslators.jl) package to automatically create data generators from specifications such as Backus-Naur Form (BNF), XML Schema Definition (XSD), and regular expressions.
+You can write your own data generators utilizing the full power of Julia, or use the [DataGeneratorTranslators](https://github.com/robertfeldt/DataGeneratorTranslators.jl) package to automatically create data generators from specifications such as Backus-Naur Form (BNF), XML Schema Definition (XSD), and regular expressions.
+
+Note! Going forward this will be the main DataGeneratorTranslators.jl package repo since my colleague and close collaborator Simon Poulding unfortunately passed away during 2017. We worked on these packages together but I will have to carry the torch forward.
 
 
 ## Installation
@@ -16,8 +18,8 @@ You can write your own data generators utilizing the full power of Julia, or use
 Install by cloning the package directly from GitHub -- including two packages it requires, `DataGeneratorTranslators` and `BaseTestMulti` -- from a Julia REPL:
 
     julia> Pkg.clone("https://github.com/simonpoulding/BaseTestMulti.jl")
-    julia> Pkg.clone("https://github.com/simonpoulding/DataGeneratorTranslators.jl")
-    julia> Pkg.clone("https://github.com/simonpoulding/DataGenerators.jl")
+    julia> Pkg.clone("https://github.com/robertfeldt/DataGeneratorTranslators.jl")
+    julia> Pkg.clone("https://github.com/robertfeldt/DataGenerators.jl")
 
 
 ## Usage
@@ -187,7 +189,7 @@ The purpose of the last three parameters is to limit data structures that are un
 	
 #### Automatic Creation of Generators
 
-As alternative to writing generators manually, the DataGeneratorTranslators package automatically create generators from supported specifications such as Backus-Naur Form (BNF), XML Schema Definition (XSD), and regular expressions.  The resulting generator code can be used immediately by the `DataGenerators` package, refined manually (e.g. to incorporate constraints missing from the specification), or as the starting point for manually-created generator.  See the README in the [DataGeneratorTranslators](https://github.com/simonpoulding/DataGeneratorTranslators.jl) package for more details.
+As alternative to writing generators manually, the DataGeneratorTranslators package automatically create generators from supported specifications such as Backus-Naur Form (BNF), XML Schema Definition (XSD), and regular expressions.  The resulting generator code can be used immediately by the `DataGenerators` package, refined manually (e.g. to incorporate constraints missing from the specification), or as the starting point for manually-created generator.  See the README in the [DataGeneratorTranslators](https://github.com/robertfeldt/DataGeneratorTranslators.jl) package for more details.
 
 	
 ### Choice Models
